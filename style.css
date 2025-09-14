@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  margin: 10;
+  padding: 10;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+
+::selection {
+  background-color: #F54927;
+}
+::-webkit-selection {
+  background-color: #F54927;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Noto Serif KR';
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+  float: left;
+}
+
+.container > img {
+  padding: 5px;
+}
+
+.col-work {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+ul {
+  font-size: 13px;
+  height: 100%;
+  float: left;
+  list-style-type: none;
+  padding: 15px;
+}
+
+li a {
+  font-style: italic;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+video {
+  width: 100%;
+}
+
+a:hover {
+  color: whitesmoke;
+  backdrop-filter: blur(10px);
+}
+
+.col-caption {
+  font-size: 13PX;
+  padding: 15PX;
+  float: left;
+}
+
+.col-caption p {
+  font-style: italic;
+
+}
+
+.col-caption a{
+  font-style: italic;
+  
+}
+.col-video {
+  padding: 15PX;
+  float: right;
+}
+
+.col-text {
+  font-size: 11px;
+  padding: 15px;
+  float: left;
+}
+
+.col-img {
+  padding: 15px;
+  float: left;
+}
+
+/* for desktop*/
+.col-work {width: 33.33%;}
+.col-caption {width:33.33%;}
+.col-video {width: 33.33%;}
+.col-text {width: 33.33%;}
+.col-img {width: 66.66%}
+
+
+
+@media only screen and (max-width:600px) {
+  /* for mobile phones*/
+  [class*="col-"] {
+    width: 100%;
+  }
+  video {
+   
+  }
+}
+
+.inyeongchoi {
+  font-size: 11px;
+  padding: 15px;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 7px;
+}
+
+.foottiptext {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+
+.foottip {
+  width: 100%;
+  float: right;
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  /* Position the tooltip */
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.foottiptext:hover .foottip {
+  visibility: visible;
+}
+
+.bold {
+  margin-inline: 3px;
+  font-weight: bold;
+  color: black;
+}
+
+.italic {
+  margin-inline: 3px;
+  font-style: italic;
+  color: darkred;
+}
